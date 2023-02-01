@@ -1,5 +1,5 @@
-FROM node
-WORKDIR '/Users/aravindreddyveerelli/dockerapp'
+FROM node:alpine
+WORKDIR '/app'
 COPY package.json ./
 RUN npm install
 COPY . .
